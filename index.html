@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="current-weather">
+            <div>
+                <h1>MY WEATHER</h1>
+            </div>
+            <div class="search-container">
+                <label>
+                    <input type="text" class="search" placeholder="Search">
+                    <img src="task1-img/search.png" class="search-img">
+                </label>
+            </div>
+        </div>
+        <div class="weather-menu-container">
+            <div class="weather-menu">
+                <ul>
+                    <li class="menu-item-today menu-checked">Today</li>
+                    <li class="menu-item-forecast">5-day forecast</li>
+                </ul>
+            </div>
+        </div>
+        <div class="weather-info-container">
+            <div class="today-container">
+                <div class="weather-info">
+                    <div class="city-date">
+                        <p class="city-name">CURRENT WEATHER</p>
+                        <p class="current-date"></p>
+                    </div>
+                    <div class="current-weather-info">
+                        <div class="current-weather-main">
+                            <img src="" class="current-weather-img">
+                            <p class="weather-name"></p>
+                        </div>
+                        <div class="current-temperature-container">
+                            <p class="current-temperature"></p>
+                            <p class="current-temperature-real"></p>
+                        </div>
+                        <div class="sun-info">
+                            <table>
+                                <tr>
+                                    <td>Sunrise</td>
+                                    <td class="sunrise"></td>
+                                </tr>
+                                <tr>
+                                    <td>Sunset</td>
+                                    <td class="sunset"></td>
+                                </tr>
+                                <tr>
+                                    <td>Duration</td>
+                                    <td class="day-duration"></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="hourly-container">
+                    <div class="hourly-header">
+                        <p>HOURLY</p>
+                    </div>
+                    <div class="hourly-info">
+                        <table>
+                            <tr>
+                                <th class="day-name"></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td><img src=""></td> 
+                                <td><img src=""></td> 
+                                <td><img src=""></td>
+                                <td><img src=""></td> 
+                                <td><img src=""></td> 
+                                <td><img src=""></td> 
+                                <td><img src=""></td> 
+                            </tr>
+                            <tr class="underlined">
+                                <td>Forecast</td>
+                                <td></td>
+                                <td></td> 
+                                <td></td> 
+                                <td></td> 
+                                <td></td> 
+                                <td></td> 
+                             </tr>
+                             <tr class="underlined">
+                                <td>Temp (&degC)</td>
+                                <td></td>
+                                <td></td> 
+                                <td></td> 
+                                <td></td> 
+                                <td></td> 
+                                <td></td> 
+                             </tr>
+                             <tr class="underlined">
+                                <td>Real Feel</td>
+                                <td></td>
+                                <td></td> 
+                                <td></td> 
+                                <td></td> 
+                                <td></td> 
+                                <td></td> 
+                             </tr>
+                             <tr>
+                                <td>Wind (km/h)</td>
+                                <td></td>
+                                <td></td> 
+                                <td></td> 
+                                <td></td> 
+                                <td></td> 
+                                <td></td> 
+                             </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="nearby-places-container">
+                    <div class="nearby-places-header">
+                        <p>NEARBY PLACES</p>
+                    </div>
+                    <div class="nearby-places">
+
+                    </div>
+                </div>
+            </div>
+            <div class="forecast-container">
+                <div class="forecast-days-container">
+                    <div class="forecast-day forecast-day-checked">
+                        <p class="forecast-day-name"></p>
+                        <p class="forecast-day-date"></p>
+                        <img src="task1-img/search.png" class="forecast-day-img">
+                        <p class="forecast-day-temperature">25C</p>
+                        <p class="forecast-day-weather"></p>
+                    </div>
+                    <div class="forecast-day">
+                        <p class="forecast-day-name"></p>
+                        <p class="forecast-day-date"></p>
+                        <img src="task1-img/search.png" class="forecast-day-img">
+                        <p class="forecast-day-temperature">25C</p>
+                        <p class="forecast-day-weather"></p>
+                    </div>
+                    <div class="forecast-day">
+                        <p class="forecast-day-name"></p>
+                        <p class="forecast-day-date"></p>
+                        <img src="task1-img/search.png" class="forecast-day-img">
+                        <p class="forecast-day-temperature"></p>
+                        <p class="forecast-day-weather"></p>
+                    </div>
+                    <div class="forecast-day">
+                        <p class="forecast-day-name"></p>
+                        <p class="forecast-day-date"></p>
+                        <img src="task1-img/search.png" class="forecast-day-img">
+                        <p class="forecast-day-temperature"></p>
+                        <p class="forecast-day-weather"></p>
+                    </div>
+                    <div class="forecast-day">
+                        <p class="forecast-day-name"></p>
+                        <p class="forecast-day-date"></p>
+                        <img src="task1-img/search.png" class="forecast-day-img">
+                        <p class="forecast-day-temperature"></p>
+                        <p class="forecast-day-weather"></p>
+                    </div>
+                </div>
+                <div class="forecast-hourly">
+                    <div class="hourly-header">
+                        <p>HOURLY</p>
+                    </div>
+                    <div class="forecast-hourly-info">
+                        <table>
+                            <tr>
+                                <th class="day-name"></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td><img src=""></td> 
+                                <td><img src=""></td> 
+                                <td><img src=""></td>
+                                <td><img src=""></td> 
+                                <td><img src=""></td> 
+                                <td><img src=""></td> 
+                                <td><img src=""></td> 
+                            </tr>
+                            <tr class="underlined">
+                                <td>Forecast</td>
+                                <td></td>
+                                <td></td> 
+                                <td></td> 
+                                <td></td> 
+                                <td></td> 
+                                <td></td> 
+                             </tr>
+                             <tr class="underlined">
+                                <td>Temp (&degC)</td>
+                                <td></td>
+                                <td></td> 
+                                <td></td> 
+                                <td></td> 
+                                <td></td> 
+                                <td></td> 
+                             </tr>
+                             <tr class="underlined">
+                                <td>Real Feel</td>
+                                <td></td>
+                                <td></td> 
+                                <td></td> 
+                                <td></td> 
+                                <td></td> 
+                                <td></td> 
+                             </tr>
+                             <tr>
+                                <td>Wind (km/h)</td>
+                                <td></td>
+                                <td></td> 
+                                <td></td> 
+                                <td></td> 
+                                <td></td> 
+                                <td></td> 
+                             </tr>
+                        </table>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="error-container">
+                <div>
+                    <img src="task1-img/404.png" alt="404 Not found" class="error-img">
+                    <p class="error-message">dwqdqwdqw</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script> </script>
+</body>
+</html>
